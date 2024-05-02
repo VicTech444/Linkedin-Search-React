@@ -38,7 +38,7 @@ export const JobSearch = () => {
       </article>
       <article className="flex items-center justify-center">
         <Link
-          to={validate ? "/jobs" : "/"}
+          to={validate ? "/Linkedin-Search-React/jobs" : "/Linkedin-Search-React/"}
           className="rounded-lg bg-slate-200 px-2 py-2 text-base text-black outline-none hover:bg-slate-300 active:bg-slate-400"
         >
           Start searching

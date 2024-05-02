@@ -3,15 +3,15 @@ import { Homepage, JobList } from "../components";
 
 export const route = createBrowserRouter([
     {
-        path: '/',
+        path: `/Linkedin-Search-React/`,
         element: <Homepage />
     },
     {
-        path: '/jobs',
+        path: '/Linkedin-Search-React/jobs',
         element: <JobList />
     },
     {
         path: '*',
-        element: <Navigate to="/"/>
+        element: <Navigate to='/Linkedin-Search-React/' />
     }
 ])

@@ -9,7 +9,9 @@ import { ErrorMsg, Loading } from "./index";
 export const JobList = () => {
   let { location, job } = useRefsValues();
   
-  if (!location && !job) return ( <Navigate to='/'/> );
+  if (!location && !job) {
+    return ( <Navigate to='/Linkedin-Search-React/'/> );
+  }
 
   let options = setLinkOptions({
     search: job,
