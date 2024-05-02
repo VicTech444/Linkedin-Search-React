@@ -11,7 +11,7 @@ export const Input = forwardRef<HTMLInputElement, Props>((props, reference) => {
 
     return (
         <input
-          className="rounded-md px-1 py-2 text-base text-black outline-none"
+          className="rounded-md px-1 py-2 text-base text-black outline-none w-full"
           placeholder={placeholder}
           ref={reference}
           onChange={handleInputChange}
