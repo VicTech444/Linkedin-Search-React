@@ -21,7 +21,7 @@ export const JobList = () => {
   let { linkedinQuery } = useAPI(options);
 
   if (linkedinQuery.isLoading || linkedinQuery.isFetching) return <Behavior Component={Loading} />;
-  if (linkedinQuery.isError) return <Behavior Component={ErrorMsg} />;
+  if (linkedinQuery.isError || !linkedinQuery.data?.length || typeof linkedinQuery.data === 'string') return <Behavior Component={ErrorMsg} />;
 
   return (
     <div className="w-3/4 rounded-md border border-white">
