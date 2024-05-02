@@ -27,13 +27,11 @@ export const JobSearch = () => {
           ref={jobRef}
           handleInputChange={handleInputsChange}
           placeholder="Enter the job name"
-          minLength={6}
         />
         <Input
           ref={locationRef}
           handleInputChange={handleInputsChange}
           placeholder="Enter the job location"
-          minLength={2}
         />
       </article>
       <article className="flex items-center justify-center">

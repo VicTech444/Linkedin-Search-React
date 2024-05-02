@@ -20,7 +20,7 @@ export const JobList = () => {
 
   let { linkedinQuery } = useAPI(options);
 
-  if (linkedinQuery.isLoading) return <Behavior Component={Loading} />;
+  if (linkedinQuery.isLoading || linkedinQuery.isFetching) return <Behavior Component={Loading} />;
   if (linkedinQuery.isError) return <Behavior Component={ErrorMsg} />;
 
   return (

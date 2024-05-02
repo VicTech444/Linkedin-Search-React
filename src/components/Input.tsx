@@ -3,7 +3,7 @@ import { forwardRef } from "react"
 interface Props {
     handleInputChange: () => void;
     placeholder: string;
-    minLength: number;
+    minLength?: number;
   }
   
 export const Input = forwardRef<HTMLInputElement, Props>((props, reference) => {
