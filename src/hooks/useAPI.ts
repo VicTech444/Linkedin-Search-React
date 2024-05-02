@@ -14,7 +14,6 @@ export const useAPI = (options: LinkedinOptions) => {
     let linkedinQuery = useQuery({
         queryKey: ['jobs'],
         queryFn: () => getLinkedinInfo(options),
-        staleTime: 1000 * 60 * 30,
         refetchOnWindowFocus: false,
         refetchOnReconnect: false,
     })
