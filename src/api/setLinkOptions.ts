@@ -11,7 +11,7 @@ export const setLinkOptions = ({search, location}: Props): LinkedinOptions => {
         url: 'https://linkedin-jobs-search.p.rapidapi.com/',
         headers: {
           'content-type': 'application/json',
-          'X-RapidAPI-Key': '5b52da59ecmshd6cc04c77fc826ap18a006jsnfc9fccf216df',
+          'X-RapidAPI-Key': '48f083acb0msh1c2a2187bae615cp1f0dfejsn25ed4d9660c7',
           'X-RapidAPI-Host': 'linkedin-jobs-search.p.rapidapi.com'
         },
         data: {

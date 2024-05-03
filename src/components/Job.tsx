@@ -1,6 +1,6 @@
+import { Link } from "react-router-dom";
 import { FC } from "react";
 import { LinkedinResponse } from "../interfaces";
-import { Link } from "react-router-dom";
 
 interface Props {
   job: LinkedinResponse;

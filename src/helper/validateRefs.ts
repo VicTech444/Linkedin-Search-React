@@ -1,18 +1,23 @@
 import { RefObject } from "react";
 
-interface Props {
-    jobRef: RefObject<HTMLInputElement>;
-    locationRef: RefObject<HTMLInputElement>;
-}
+type Props = RefObject<HTMLInputElement>;
 
-export const validateRefs = ({ jobRef, locationRef }: Props): boolean => {
-    let inputJob = jobRef.current;
-    let inputLocation = locationRef.current
+export const validateRef = (refToValidate : Props): boolean => {
 
-    if (!inputJob) return false;
-    else if (!inputLocation) return false
-    else if (inputJob.value.length < inputJob.minLength) return false
-    else if (inputLocation.value.length < inputLocation.minLength) return false
+    let input = refToValidate.current;
+
+    if (!input) return false
+    else if (input.value.length < input.minLength) return false
 
     return true
+}
+
+export const invalidRefMsg = (refToValidate : Props): string => {
+
+    let input = refToValidate.current;
+
+    if (!input) return 'Input doesnt exist'
+    else if (input.value.length < input.minLength) return `The min characters must be ${input.minLength}`
+
+    return `Everything's fine`;
 }
