@@ -20,16 +20,12 @@ export const JobList = () => {
 
   if (linkedinQuery.isLoading || linkedinQuery.isFetching)
     return <Behavior Component={Loading} />;
-  if (
-    linkedinQuery.isError ||
-    !linkedinQuery.data?.length ||
-    typeof linkedinQuery.data === "string"
-  )
-    return <Behavior Component={ErrorMsg} />;
+  if (linkedinQuery.isError)
+    return <Behavior Component={() => ErrorMsg(linkedinQuery.error)} />;
 
   return (
-    <div className="flex flex-col gap-y-2 justify-center w-full">
-      <div className="w-3/4 rounded-md border border-white flex flex-col self-center">
+    <div className="flex w-full flex-col justify-center gap-y-2">
+      <div className="flex w-3/4 flex-col self-center rounded-md border border-white">
         <section className="bg-black p-1 text-white">
           <h1 className="p-1 text-3xl">
             Jobs information{" "}
@@ -44,17 +40,17 @@ export const JobList = () => {
           ))}
         </section>
       </div>
-      <div className="flex text-white w-9/12 self-center justify-between">
+      <div className="flex w-9/12 flex-wrap justify-between max-sm:gap-x-96 gap-y-3 self-center text-white">
         <button
           onClick={previousPage}
-          className="rounded-lg bg-slate-200 px-2 py-2 text-center text-base text-black outline-none hover:bg-slate-300 active:bg-slate-400"
+          className="w-max max-sm:grow rounded-lg bg-slate-200 px-2 py-2 text-center text-base text-black outline-none hover:bg-slate-300 active:bg-slate-400 "
         >
           Previous Page
         </button>
-        <h1>Current page: {page}</h1>
+        <h1 className="w-max max-sm:grow flex self-center justify-center">Current page: {page}</h1>
         <button
           onClick={nextPage}
-          className="rounded-lg bg-slate-200 px-2 py-2 text-center text-base text-black outline-none hover:bg-slate-300 active:bg-slate-400"
+          className="w-max max-sm:grow rounded-lg bg-slate-200 px-2 py-2 text-center text-base text-black outline-none hover:bg-slate-300 active:bg-slate-400 "
         >
           Next Page
         </button>
