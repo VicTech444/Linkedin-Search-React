@@ -46,8 +46,6 @@ export const useAPI = (options: LinkedinOptions) => {
         setPage(page - 1)
     }
 
-    console.log(linkedinQuery);
-
     return {
         // Props
         linkedinQuery,
