@@ -18,6 +18,7 @@ export const Job: FC<Props> = ({ job }) => {
       <Link
         to={job.job_url}
         className="rounded-lg bg-slate-300 px-2 py-2 text-base text-black outline-none w-max hover:bg-slate-400 active:bg-slate-500"
+        target="_blank"
       >
         Go to this post
       </Link>
