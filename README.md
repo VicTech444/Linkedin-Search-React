@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+# LinkedIn Job Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LinkedIn Job Search is a web application developed to help users find jobs on LinkedIn based on their preferred location and job title. This project leverages modern web development technologies and practices, including React Query for data fetching and pagination.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Search Jobs by Location and Title**: Users can input their desired job location and title to search for relevant job listings.
+- **Pagination**: Efficiently navigates through pages of job listings without overwhelming the user or the server.
+- **React Query**: Manages server-state, handles caching, background updates, and provides a robust API for data fetching.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **React Query**: Hooks for fetching, caching, and updating asynchronous data in React.
+- **HTML5 & CSS3**: Markup and styling.
+- **Typescript**: Core scripting language.
+- **Axios**: Promise-based HTTP client for the browser and Node.js.
+- **Node.js & Express**: Backend server and API.
+- **Git & GitHub**: Version control and repository hosting.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/your-username/linkedin-job-search.git
+    cd linkedin-job-search
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+
+3. **Run the application**:
+    ```sh
+    npm start
+    ```
+
+4. **Navigate to**:
+    ```
+    http://localhost:3000
+    ```
+
+## Usage
+
+1. Open the application in your web browser.
+2. Enter the desired job title and location in the respective input fields.
+3. Click the "Search" button to fetch job listings from LinkedIn.
+4. Navigate through the paginated results to find your ideal job.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a pull request.
+
+## Contact
+
+For any inquiries or feedback, please reach out to:
+
+- **Name**: Victor Hugo Vera Molina
+- **Email**: Victor_verq@outlook.com
+- **LinkedIn**: <a href="https://www.linkedin.com/in/victor-vera-dev/">Victor Vera Dev</a>
