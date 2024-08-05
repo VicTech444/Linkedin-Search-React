@@ -63,4 +63,4 @@ For any inquiries or feedback, please reach out to:
 
 - **Name**: Victor Hugo Vera Molina
 - **Email**: Victor_verq@outlook.com
-- **LinkedIn**: <a href="https://www.linkedin.com/in/victor-vera-dev/">Victor Vera Dev</a>
+- **LinkedIn**: <a href="https://www.linkedin.com/in/victor-vera-dev/" target="_blank">Victor Vera Dev</a>
