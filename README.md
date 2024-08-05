@@ -14,8 +14,7 @@ LinkedIn Job Search is a web application developed to help users find jobs on Li
 - **React Query**: Hooks for fetching, caching, and updating asynchronous data in React.
 - **HTML5 & CSS3**: Markup and styling.
 - **Typescript**: Core scripting language.
-- **Axios**: Promise-based HTTP client for the browser and Node.js.
-- **Node.js & Express**: Backend server and API.
+- **Axios**: Promise-based HTTP client for the browser and the endpoint.
 - **Git & GitHub**: Version control and repository hosting.
 
 ## Installation
